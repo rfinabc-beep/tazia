@@ -71,22 +71,6 @@ export default function Navbar() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
         @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-        @keyframes shimmer {
-          0% { background-position: -200% center; }
-          100% { background-position: 200% center; }
-        }
-        .shimmer-text {
-          font-family: 'Orbitron', sans-serif;
-          font-size: 20px;
-          font-weight: 700;
-          letter-spacing: 2px;
-          background: linear-gradient(90deg, #fff 0%, #fff 35%, #a0c4ff 45%, #ffffff 50%, #d4aaff 55%, #fff 65%, #fff 100%);
-          background-size: 200% auto;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          animation: shimmer 3s linear infinite;
-        }
         .nav-icon-btn {
           background: none !important;
           border: none !important;
@@ -125,7 +109,7 @@ export default function Navbar() {
           style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', position: 'relative', zIndex: 2 }}
           onClick={() => router.push('/')}
         >
-          <span className="shimmer-text">TAZIA</span>
+          <span style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '20px', fontWeight: '700', color: '#fff', letterSpacing: '2px' }}>TAZIA</span>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff3b3b', flexShrink: 0, animation: 'blink 1s ease-in-out infinite', boxShadow: '0 0 6px #ff3b3b' }} />
         </div>
 
