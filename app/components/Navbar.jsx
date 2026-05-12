@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -50,21 +49,11 @@ export default function Navbar() {
         borderBottom: '1px solid rgba(255,255,255,0.08)',
       }}>
         <div
-          style={{ display: 'inline-flex', alignItems: 'flex-end', cursor: 'pointer' }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}
           onClick={() => router.push('/')}
         >
-          <Image
-            src="/logo.png"
-            alt="আড়ৎ"
-            width={80}
-            height={32}
-            style={{ objectFit: 'contain', mixBlendMode: 'screen', display: 'block' }}
-          />
-          <div style={{ display: 'flex', alignItems: 'center', gap: '3px', marginLeft: '3px', marginBottom: '3px' }}>
-            <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ff3b3b', flexShrink: 0, animation: 'blink 1.2s ease-in-out infinite' }} />
-            <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#e8a020', flexShrink: 0, animation: 'blink 1.2s ease-in-out infinite 0.4s' }} />
-            <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#22c55e', flexShrink: 0, animation: 'blink 1.2s ease-in-out infinite 0.8s' }} />
-          </div>
+          <span style={{ fontSize: '22px', fontWeight: '800', color: '#fff', letterSpacing: '2px' }}>Tazia</span>
+          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff3b3b', flexShrink: 0, animation: 'blink 1s ease-in-out infinite' }} />
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <button className="nav-icon-btn" onClick={() => router.push('/checkout')}>
