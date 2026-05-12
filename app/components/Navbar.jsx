@@ -14,6 +14,7 @@ export default function Navbar() {
   return (
     <>
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
         @keyframes blink {
           0%, 100% { opacity: 1; }
           50% { opacity: 0; }
@@ -52,7 +53,7 @@ export default function Navbar() {
           style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}
           onClick={() => router.push('/')}
         >
-          <span style={{ fontSize: '22px', fontWeight: '800', color: '#fff', letterSpacing: '2px' }}>Tazia</span>
+          <span style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '20px', fontWeight: '700', color: '#fff', letterSpacing: '2px' }}>TAZIA</span>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff3b3b', flexShrink: 0, animation: 'blink 1s ease-in-out infinite' }} />
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
