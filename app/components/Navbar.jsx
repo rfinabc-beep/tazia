@@ -66,7 +66,7 @@ export default function Navbar() {
           style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}
           onClick={() => router.push('/')}
         >
-          <span className="shimmer-text">TAZIA</span>
+          <span className="shimmer-text">SAFURA</span>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff3b3b', flexShrink: 0, animation: 'blink 1s ease-in-out infinite', boxShadow: '0 0 6px #ff3b3b' }} />
         </div>
 
