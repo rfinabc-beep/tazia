@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '6px' }}>
             <span style={{ fontSize: '13px', color: '#e8a020' }}>📞</span>
-            <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.4)' }}>01685 912823</span>
+            <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.4)' }}>01707076718</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
             <span style={{ fontSize: '13px', color: '#e8a020' }}>📍</span>
